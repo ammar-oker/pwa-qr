@@ -4,7 +4,13 @@ const assets = [
     '/',
     '/index.html',
     '/js/app.js',
-    '/css/style.css'
+    '/css/style.css',
+    '//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css',
+    '//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css',
+    '//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js',
+    '/js/alert.js',
+    'js/jsQR.js',
+    'js/qr-reader.js'
 ];
 
 // install event

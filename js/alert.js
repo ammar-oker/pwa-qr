@@ -44,6 +44,7 @@ function showConfirm(text, onok, oncancel, oncontinue) {
                 'ok': 'Follow Link',
                 'cancel': 'Close',
             },
-            'reverseButtons': true
-        });
+            'reverseButtons': true,
+            'position': 'bottom-center'
+        }).setHeader('QR Detected')
 }
