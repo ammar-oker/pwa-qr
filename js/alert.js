@@ -5,12 +5,12 @@ alertify.dialog('myConfirm', function() {
             var settings = alertify.confirm().settings;
             for (var prop in settings)
                 this.settings[prop] = settings[prop];
-            var setup = alertify.confirm().setup();
-            setup.buttons.push({
-                text: '<u>C</u>opy to clipboard',
-                key: 67 /*c*/ ,
-                scope: 'ok',
-            });
+            var setup = alertify.alert().setup();
+            // setup.buttons.push({
+            //     text: '<u>C</u>opy to clipboard',
+            //     key: 67 /*c*/ ,
+            //     scope: 'ok',
+            // });
             return setup;
         },
         settings: {
@@ -38,11 +38,11 @@ function showConfirm(text, onok, oncancel, oncontinue) {
         .myConfirm(text)
         .set({
             'onok': onok,
-            'oncontinue': oncontinue,
+            // 'oncontinue': oncontinue,
             'oncancel': oncancel,
             'labels': {
                 'ok': 'Follow Link',
-                'cancel': 'Close',
+                // 'cancel': 'Close',
             },
             'reverseButtons': true,
             'position': 'bottom-center'
